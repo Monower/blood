@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<div class="table-container">
+  <h1 class="heading">Blood Donor Info</h1>
+  <nav>
+    <div class="searchbox">
+            <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+    </div>
+    <div class="btn">
+       <button id="myBtn">Add User</button>
+    </div>
+  </nav>
+  <!-- modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+  <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Modal Header</h2>
+      </div>
+      <br />
+      <div class="modal-body">
+        <div class="form-control">
+          <label for="">Name</label>
+             <input type="text" name="name" id="name" placeholder="write your name"/>
+        </div>
+        <div class="form-control">
+          <label for="">Blood group</label>
+         <div class="custom-select" style="width: 150px;">
+             <select name="" id="">
+            
+          
+            <option value="">AB+</option>
+            <option value="">A-</option>
+           <option value="">B+</option>
+            <option value="">B-</option>
+            <option value="">O+</option>
+            
+          </select>
+         </div>
+          
+        </div>
+        
+          <div class="form-control">
+            <label for="">Location</label>
+            <input type="text" name="name" id="name" placeholder="write your name" />
+          </div>
+          
+            <div class="form-control">
+              <label for="">Phone</label>
+              <input type="number" name="name" id="name" placeholder="write your name" />
+            </div>
+            <div class="form-control">
+              <label for="">Date</label>
+              <input type="date" name="name" id="name" placeholder="write your name" />
+            </div>
+            <br />
+            <br />
+     
+        
+         
+      </div>
+      <div class="modal-footer">
+        <button type="submit"> Add</button>
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- modal -->
+  <div class="table-center">
+  <table class="table customers-list" id="myTable" >
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Blood</th>
+        <th>location</th>
+        <th>Number</th>
+        <th>Date</th>
+        <th colspan="2">Operation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="id">৬</td>
+        <td data-label="Name">Kawsar Ahmed</td>
+        <td data-label="Blood">Ab+</td>
+        <td data-label="Location">Dhaka</td>
+        <td data-label="Number">01763548265</td>
+        <td data-label="Date">01/05/1998</td>
+        <td><a href=""><i class="fa fa-pencil-square-o"></i></a></td>
+        <td><a href=""><i class="fa fa-trash" ></i></a></td>
+      </tr>
+      <tr>
+        <td data-label="id">2</td>
+        <td data-label="Name">কাওছার আহমেদ</td>
+        <td data-label="Blood">Ab+</td>
+        <td data-label="Location">Dhaka</td>
+        <td data-label="Number">0176277200865</td>
+        <td data-label="Date">01/05/1998</td>
+        <td><a href="">Edit</a></td>
+        <td><a href="">Delete</a></td>
+      </tr>
+      <tr>
+        <td data-label="id">3</td>
+        <td data-label="Name">Kawsar Ahmed</td>
+        <td data-label="Blood">Ab+</td>
+        <td data-label="Location">Dhaka</td>
+        <td data-label="Number">01763548265</td>
+        <td data-label="Date">01/05/1998</td>
+        <td><a href="">Edit</a></td>
+        <td><a href="">Delete</a></td>
+      </tr>
+      <tr>
+        <td data-label="id">4</td>
+        <td data-label="Name">Kawsar Ahmed</td>
+        <td data-label="Blood">Ab+</td>
+        <td data-label="Location">Dhaka</td>
+        <td data-label="Number">01763548265</td>
+        <td data-label="Date">01/05/1998</td>
+        <td><a href="">Edit</a></td>
+        <td><a href="">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+  
+ 
+     
+ </div>
+  
+    
+
+      <script src="main.js"></script>
+
+</body>
+</html>
